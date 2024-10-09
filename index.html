@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prescription page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="left-row">
+        <div class="logo">
+          <img src="images/Group 3.png" />
+        </div>
+        <div class="name">
+          <div class="burger">
+            <img src="/images/Group 1.png" alt="burger" />
+          </div>
+          <h1>Your Laboratory Name</h1>
+        </div>
+      </div>
+
+      <div class="right-row">
+        <div><img src="images/bell.png" /></div>
+        <div><img src="images/avater.png" /></div>
+
+        <h3>Isaac Odinaka</h3>
+        <div class="arrow"><img src="images/arrow.png" /></div>
+        <div class="burger-img" id="burger-icon">
+          <img src="/images/burger.png" alt="burger" />
+        </div>
+
+        <div class="close-img" id="close-icon">
+          <img src="/images/close.svg" alt="close" />
+        </div>
+      </div>
+    </nav>
+    <!-- ----------section-------- -->
+    <section>
+      <ul class="desktop-left" id="side-menu">
+        <li>
+          <a href="#" class="list">
+            <div class="list-item">
+              <img src="/images/soild.svg" class="img" />
+              <h4>Front Office</h4>
+            </div>
+            <div>
+              <img
+                src="/images/arrow.png"
+                alt="arrow"
+                class="arrow-container"
+              />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list">
+            <div class="list-item">
+              <img src="images/pen.svg" alt="pen" class="img" />
+
+              <h4>Phlebotomy</h4>
+            </div>
+            <div>
+              <img src="images/arrow.png" class="arrow-container" alt="" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list">
+            <div class="list-item">
+              <img src="images/lab.svg" alt="lab" class="img" />
+
+              <h4>Laboratory</h4>
+            </div>
+
+            <div>
+              <img src="images/arrow.png" class="arrow-container" alt="" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list">
+            <div class="list-item">
+              <img src="images/book.svg" alt="book" class="img" />
+
+              <h4>Admin</h4>
+            </div>
+            <div>
+              <img src="images/arrow.png" class="arrow-container" alt="" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list">
+            <div class="list-item">
+              <img src="images/bike.svg" alt="bike" class="img" />
+
+              <h4>Dispatch</h4>
+            </div>
+
+            <div>
+              <img src="images/arrow.png" class="arrow-container" alt="" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list">
+            <div class="list-item">
+              <img src="images/mic.svg" alt="mic" class="img" />
+
+              <h4>Analyzers</h4>
+            </div>
+            <div>
+              <img src="images/arrow.png" class="arrow-container" alt="" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list">
+            <div class="list-item">
+              <img src="images/check.svg" alt="check" class="img" />
+
+              <h4>QC</h4>
+            </div>
+
+            <div>
+              <img src="images/arrow.png" class="arrow-container" alt="" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list">
+            <div class="list-item">
+              <img src="images/bills.svg" alt="bills" class="img" />
+
+              <h4>Account</h4>
+            </div>
+
+            <div>
+              <img src="images/arrow.png" class="arrow-container" alt="" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list">
+            <div class="list-item">
+              <img src="images/box.svg" alt="box" class="img" />
+              <h4>Inventory</h4>
+            </div>
+            <div>
+              <img src="images/arrow.png" class="arrow-container" alt="" />
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <div class="desktop-right">
+        <div><h1>Drug Prescription Page</h1></div>
+        <div class="right-content" id="content" class="right-content">
+          <div class="home">
+            <p>Home</p>
+            <div><img src="images/arrow-right-solid 1.svg" /></div>
+          </div>
+          <div class="page-1">
+            <p>Page 1</p>
+            <div><img src="images/arrow-right-solid 1.svg" /></div>
+          </div>
+          <div class="page-2">
+            <p>page 2</p>
+          </div>
+        </div>
+        <div class="inner-right">
+          <ul class="dpp">
+            <li><button class="vital">Vital Signs</butoon></li>
+            <li><button class="check-box">Presenting Complain</butoon></li>
+            <li><button class="check-box">Diagnosis</butoon></li>
+            <li><button class="check-box">Plan</butoon></li>
+              <li><button class="check-box">Charges</butoon></li>
+            <li><button class="check-box">Payments</butoon></li>
+            <li><button class="check-box">Prescriptions</butoon></li>
+            <li><button class="check-box">Medications</butoon></li>
+          </ul>
+          <div><h4>Prescribed Drugs</h4></div>
+          <table>
+            <thead>
+              <tr>
+                <th class="dark-background table-header">S/N</th>
+                <th class="table-header">Medicine Name</th>
+                <th class="table-header">Strength</th>
+                <th class="table-header">Interval/Duration</th>
+                <th class="table-header">Instruction</th>
+                <th class="table-header">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="first-td"><p>Tab Emzor Paracetamol 250mg</p><button class="arthemeter">Arthemeter</button></td>
+
+                <td><p>250mg</p></td>
+                <td><p>QDS/7 days</p></td>
+                <td><p>1 Morning, one night for 7 days</p></td>
+                <td><button class="remove-btn">Remove</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="first-td"><p>Tab Emzor Paracetamol 250mg </p><button class="arthemeter">Arthemeter</button></td>
+                <td><p>250mg</p></td>
+                <td><p>QDS/7 days</p></td>
+                <td><p>1 Morning, one night for 7 days</p></td>
+                <td><button class="remove-btn">Remove</butoon></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="first-td"><p>Tab Emzor Paracetamol 250mg</p><button class="arthemeter">Arthemeter</button></td>
+                <td><p>250mg</p></td>
+                <td><p>QDS/7 days</p></td>
+                <td><p>1 Morning, one night for 7 days</p></td>
+                <td><button class="remove-btn">Remove</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+         
+          <form>
+            <div class="form-group">
+                <label for="medicine-name">Medicine Name</label>
+                <input type="text" id="medicine-name" class="input-field" placeholder="search Medicine brand">
+                <ul class="stock">
+                    <li><div class="emzor"><p>Emzor Paracetamol Tab 250mg</p><p class="bottles">(10 sachets left)</p></div></li>
+                    <li><div class="emzor"><p>Paracetamol</p><p class="bottles">(5 bottles left)</p></div></li>
+                </ul>
+            </div>
+        
+            <div class="form-group">
+                <label for="strength">Strength</label>
+                <input type="text" id="strength" class="input-field" placeholder="Enter Strength">
+            </div>
+        
+            <div class="form-group">
+                <label for="interval">Interval</label>
+                <input type="text" id="interval" class="input-field" placeholder="enter Interval">
+            </div>
+        
+            <div class="form-group">
+                <label for="instruction">Special Instruction</label>
+                <input type="text" id="instruction" class="input-field" placeholder="enter Instruction">
+            </div>
+        
+            <div class="form-group">
+                <label for="duration">Duration</label>
+                <input type="text" id="duration" class="input-field" placeholder="enter Duration">
+            </div>
+            
+            <button type="button" class="add-btn">Add</button>
+        </form>
+        <div class="next">
+          <button class="check-box">NEXT</button>
+        </div>
+       
+         
+        </div>
+      </div>
+    </section>
+
+    <!-----------footer----------->
+    <footer>
+      <div class="footer">
+        <div>e-Lab LIS by Netwalkers NG (c) 2022. All right reserved</div>
+        <div>About Us | Contact Us | Terms Of Service | Privacy Policy</div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
