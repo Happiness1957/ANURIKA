@@ -53,8 +53,7 @@ document.querySelectorAll(".list").forEach((item) => {
     }
   }
   
-  // show menu
-  // Get elements
+  
   const burgerIcon = document.getElementById("burger-icon");
   const closeIcon = document.getElementById("close-icon");
   const sideMenu = document.getElementById("side-menu");
@@ -82,3 +81,120 @@ document.querySelectorAll(".list").forEach((item) => {
       closeIcon.style.display = "none";  
     }
   });
+  fetch('https://cliniqueplushealthcare.com.ng/prescriptions/drug_class')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok ' + response.statusText);
+    }
+    return response.json();  
+  })
+  .then(data => {
+    console.log('Drug Class Data:', data);
+   
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
+  document.getElementById("prescription-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+  
+    
+    const medicineName = document.getElementById("medicine-name").value;
+    const interval = document.getElementById("interval").value;
+    const instruction = document.getElementById("instruction").value;
+    const duration = document.getElementById("duration").value;
+  
+    
+    fetch('https://cliniqueplushealthcare.com.ng/prescriptions/drug_class', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        medicineName: medicineName,
+        interval: interval,
+        instruction: instruction,
+        duration: duration
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+      
+      
+      document.getElementById("medicine-name").value = '';
+      document.getElementById("interval").value = '';
+      document.getElementById("instruction").value = '';
+      document.getElementById("duration").value = '';
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  });
+  function fetchDrugClassById(classId) {
+    const url = `https://cliniqueplushealthcare.com.ng/prescriptions/get_drug_class_by_id/${1}`;
+    
+    fetch(url)
+      .then(response => response.json())
+      .then(drugClassDetails => {
+        console.log('Drug Class Details:', drugClassDetails);
+       
+        const classDetailsSection = document.getElementById('class-details'); 
+        classDetailsSection.innerHTML = `<h2>${drugClassDetails.name}</h2><p>${drugClassDetails.description}</p>`;
+      })
+      .catch(error => console.error('Error fetching class details:', error));
+  }
+
+  fetch('https://cliniqueplushealthcare.com.ng/prescriptions/all_medicine')
+  .then(response => response.json())
+  .then(medicines => {
+    console.log('All Medicines:', medicines);
+
+    
+    const medicineList = document.getElementById('medicine-list');  // Assuming this exists in your HTML
+    medicines.forEach(medicine => {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${medicine.name} - ${medicine.description}`; // Assuming medicine has 'name' and 'description' properties
+      medicineList.appendChild(listItem);
+    });
+  })
+  .catch(error => console.error('Error fetching medicines:', error));
+
+  
+
+  document.addEventListener('DOMContentLoaded', function () {
+    
+  
+    const dropdown = document.getElementById("medicine-dropdown");
+    const input = document.getElementById("medicine-name-input");
+  
+    
+    medicineList.forEach(item => {
+      const div = document.createElement("div");
+      div.classList.add("dropdown-item");
+      div.textContent = item.name;
+      div.setAttribute("data-id", item.id); 
+  
+     
+      div.addEventListener("click", function () {
+        input.value = item.name;  
+        dropdown.style.display = "none"; 
+      });
+  
+      dropdown.appendChild(div);
+    });
+  
+    
+    input.addEventListener("click", function () {
+      dropdown.style.display = dropdown.style.display === "none" || !dropdown.style.display ? "block" : "none";
+    });
+  
+   
+    document.addEventListener("click", function (event) {
+      if (!event.target.closest(".form-group")) {
+        dropdown.style.display = "none";
+      }
+    });
+  });
+  
+  
