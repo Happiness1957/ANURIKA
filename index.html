@@ -202,9 +202,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td class="first-td">
+              <tr >
+                <td  placeholder="no Prescribed drugs yet"></td>
+                <!-- <td class="first-td">
                   <p>Tab Emzor Paracetamol 250mg</p>
                   <button class="arthemeter">Arthemeter</button>
                 </td>
@@ -212,10 +212,10 @@
                 <td><p>250mg</p></td>
                 <td><p>QDS/7 days</p></td>
                 <td><p>1 Morning, one night for 7 days</p></td>
-                <td><button class="remove-btn">Remove</button></td>
+                <td><button class="remove-btn">Remove</button></td> -->
               </tr>
               <tr>
-                <td>2</td>
+                <!-- <td>2</td>
                 <td class="first-td">
                   <p>Tab Emzor Paracetamol 250mg</p>
                   <button class="arthemeter">Arthemeter</button>
@@ -223,10 +223,10 @@
                 <td><p>250mg</p></td>
                 <td><p>QDS/7 days</p></td>
                 <td><p>1 Morning, one night for 7 days</p></td>
-                <td><button class="remove-btn">Remove</button></td>
+                <td><button class="remove-btn">Remove</button></td> -->
               </tr>
               <tr>
-                <td></td>
+                <!-- <td></td>
                 <td class="first-td">
                   <p>Tab Emzor Paracetamol 250mg</p>
                   <button class="arthemeter">Arthemeter</button>
@@ -234,7 +234,7 @@
                 <td><p>250mg</p></td>
                 <td><p>QDS/7 days</p></td>
                 <td><p>1 Morning, one night for 7 days</p></td>
-                <td><button class="remove-btn">Remove</button></td>
+                <td><button class="remove-btn">Remove</button></td> -->
               </tr>
             </tbody>
           </table>
@@ -242,81 +242,16 @@
 
         <form id="prescription-form">
           <div class="form-group">
-            <label for="medicine-name">Medicine class</label>
+            <label for="medicine-class">Medicine class</label>
             <div class="custom-dropdown">
-              <input type="text" id="medicine-name-input" class="input-field" placeholder="Select Medicine" readonly />
-              <div id="medicine-dropdown" class="dropdown-content">
-                <div id="3">ANTI MALARIA</div>
-                <div id="4">ANTI HYPERTENSIVE</div>
-                <div id="5">ANTI DIABETES</div>
-                <div id="6">ANTI PSYCHOTIC</div>
-                <div id="7">ANTI DURETICS</div>
-                <div id="8">SEDATIVES</div>
-                <div id="9">ANTI COAGULANT</div>
-                <div id="10">ANTACID</div>
-                <div id="11">ANTI CONVULSANT</div>
-                <div id="12">ANASTHESTICS AGENT</div>
-                <div id="13">ANTI HISTHAMINE</div>
-                <div id="14">ADMISSION PACK</div>
-                <div id="16">ANTI BIOTICS</div>
-                <div id="17">RESPIRATORY</div>
-                <div id="19">LAXATIVES</div>
-                <div id="20">CONTRACEPTIVE</div>
-                <div id="24">PHYSIOTHERAPY</div>
-                <div id="25">ICU (MEDS)</div>
-                <div id="27">COUGH & LOZENGES (MEDS)</div>
-                <div id="29">SUPPLEMENTS & MULTIVITAMINS</div>
-                <div id="35">ANALGESIC</div>
-                <div id="36">SUTURES</div>
-                <div id="38">CONSUMABLES</div>
-                <div id="39">INFUSIONS</div>
-                <div id="40">INSULIN</div>
-                <div id="41">ICU CONSUMABLES</div>
-                <div id="42">INOTROPES</div>
-                <div id="43">ANTI EMETIC</div>
-                <div id="44">STERIODS</div>
-                <div id="45">PHARMACOTHERAPEUTIC</div>
-                <div id="46">ANTIMYCOBACTERIALS</div>
-                <div id="47">ANTIANDROGEN</div>
-                <div id="49">CHOLINESTERASE</div>
-                <div id="50">ANTICHOLINERIGIC</div>
-                <div id="51">ANTIFIBRINOLYTICS</div>
-                <div id="52">ANTIARRHYTHMIC</div>
-                <div id="53">VACCINES</div>
-                <div id="54">ANTIRETROVIRAL</div>
-                <div id="55">Pharmacy Consumables</div>
-                <div id="56">ANTI GLUCOSE</div>
-                <div id="57">ANTI GLUCOSE TEST</div>
-                <div id="65">ANTI GLUCOSE TEST 2</div>
-                <div id="68">ANTI GLUCOSE TEST 3</div>
-                <div id="77">ANTI FUNGAL</div>
-                <div id="78">WORM EXPELLER</div>
-                <div id="80">ANTITHYRODISM</div>
-                <div id="81">EYE AND EAR DROP</div>
-                <div id="82">ANTI INFLAMMATORY</div>
-                <div id="83">OVULATORY STIMULANT</div>
-                <div id="84">PROSTATE</div>
-                <div id="85">ANTIPARASITICS</div>
-                <div id="86">VASOACTIVE CEREBRAL PRESERVER</div>
-                <div id="87">ERGOT ALKALOIDS</div>
-                <div id="88">PHOSPHOLIPIDS</div>
-                <div id="90">ANTIDIARRHEALS</div>
-                <div id="91">OPIATE ANTAGONIST</div>
-                <div id="92">URINARY ALKALINIZERS</div>
-                <div id="94">HORMONAL</div>
-                <div id="95">ANTIPASMODICS</div>
-                <div id="105">ANTIDEPRESSANT</div>
-                <div id="106">ANTI ALLERGIC</div>
-                <div id="107">ANTI URIC DAEMIA</div>
-                <div id="108">ANTI HYPERLIPIDAEMIA</div>
-                <div id="109">SYRUPS</div>
-                <div id="110">VASODILATORS</div>
-                <div id="111">MUSCLE RELAXANT</div>
-                <div id="112">ANTI CALORIE</div>
-                <div id="113">ANTI MOULD</div>
-                <div id="114">ANTI BIOTICS 2</div>
-                <div id="115">Steriods 2</div>
-              </div>
+              <input
+                type="text"
+                id="medicine-class-input"
+                class="input-field"
+                placeholder="Select Medicine class"
+              />
+
+              <ul class="dropdown-content" id="medicine-class-list"></ul>
             </div>
           </div>
 
@@ -325,107 +260,23 @@
             <div class="custom-dropdown">
               <input
                 type="text"
-                id="medicine-input"
+                id="medicine-name-input"
                 class="input-field"
-                placeholder="Search Medicine list"
-                readonly
+                placeholder="Select Medicine list"
               />
-              <div class="dropdown-content" id="medicine-dropdown">
-                <div id="1">0% DEXTROSE WATER INTRAVENOUS</div>
-                <div id="2">10% MANNITOL INTRAVENOUS I/V &</div>
-                <div id="3">4.3% DEXTROSE SALINE INTRAVENOUS"</div>
-                <div id="4">50% DEXTROSE WATER INTRAVENOUS</div>
-                <div id="5">CALCIUM LACTATE TABLET 300MG</div>
-                <div id="6">AMODIAQUINE + ARTESUNATE</div>
-
-                <div id="7">CLOTRIMAZOLE CREAM TOPICAL (CREAM)</div>
-                <div id="8">5% DEXTROSE SALINE INTRAVENOUS</div>
-                <div id="10">5% DEXTROSE WATER INTRAVENOUS I</div>
-                <div id="11">
-                  PSEUDOEPHEDRINE /TRIPOLIDINE HYDROCHLORIDE SYRUP 50MG
-                </div>
-                <div id="12">
-                  PSEUDOEPHEDRINE /TRIPOLIDINE HYDROCHLORIDE TABLET "
-                </div>
-                <div id="13">ADRENALINE INJ INTRAVENOUS I/V "</div>
-                <div id="14">ALBENDAZOLE SYRUP SYRUP 20ML</div>
-                <div id="15">ALBENDAZOLE TAB TABLET 100MG</div>
-                <div id="16">SPIRONOLACTONE TABLET 25MG</div>
-                <div id="17">METHYLDOPA TABLET 250MG</div>
-                <div id="18">AMINOPHYLLINE INJ INTRAVENOUS I</div>
-                <div id="19">AMITRIPTILLINE TAB TABLET 25MG</div>
-                <div id="20">INJ AMOXICILLIN INTRAVENOUS I/V & I/</div>
-                <div id="21">AMOXICILLIN CAP TABLET 500MG</div>
-                <div id="22">AMLODIPINE TABLET 10MG</div>
-                <div id="23">AMLODIPINE TABLET 5MG</div>
-                <div id="25">AMOXICILLIN + CLAULANIC INTRAVENOUS I/V & I/</div>
-                <div id="27">AMOXYCILLIN TABLET 250MG</div>
-                <div id="28">CARBIMAZOLE TABLET 5MG</div>
-                <div id="29">CASTOR OIL SYRUP 70ML</div>
-                <div id="30">CEFALAXIN SYRUP 125MG</div>
-                <div id="31">CERUMOL EAR DROP OTHERS 11ML</div>
-                <div id="32">CHEMIRON CAP TABLET</div>
-                <div id="33">CHLORAMPHENICOL TABLET 500MG</div>
-                <div id="34">CHLORAMPHENICOL EYE DROP OTHERS</div>
-                <div id="35">CHLORAMPHENICOL INTRAVENOUS I/</div>
-                <div id="36">CHLOROQUINE SYRUP 60ML</div>
-                <div id="37">CHLOROQUINE TABLET 250MG</div>
-                <div id="38">CHLOROQUINE INTRAMUSCULAR I/M &</div>
-                <div id="39">CHYMORAL TABLET 50.000IU</div>
-                <div id="40">CIMETIDINE INTRAVENOUS I/V & I</div>
-                <div id="41">CIMETIDINE TABLET 200MG</div>
-                <div id="42">CIPROFLOXACIN INTRAVENOUS I/V &</div>
-                <div id="43">CEFUROXIME TABLET 250MG</div>
-                <div id="44">AMOXYCILLIN TABLET 500MG</div>
-                <div id="45">AMOXYCILLIN INTRAVENOUS I/V &</div>
-                <div id="46">AMOXYCILLIN SYRUP 100ML</div>
-                <div id="47">AMPICILLIN + CLOXACILLIN DROP OTHERS 8ML</div>
-                <div id="49">AMPICILLIN + CLOXACILLIN SYRUP 100ML</div>
-                <div id="50">
-                  AMPICILLIN + CLOXACILLIN INTRAVENOUS I/V & I/M
-                </div>
-                <div id="51">ANUSOL SUPPOSITORIES</div>
-                <div id="52">TRIHEXYPHENIDYL TABLET 5MG</div>
-                <div id="54">ARTESUNATE INTRAMUSCULAR I/M &</div>
-                <div id="55">s-AMLODIPINE TAB TABLET 10MG</div>
-                <div id="57">s-AMLODIPINE TABLET 2.5MG</div>
-                <div id="58">ASPIRIN TABLET 300MG</div>
-                <div id="59">ASPIRIN TABLET 75MG</div>
-                <div id="60">ATENOLOL TABLET 100MG</div>
-                <div id="61">ATENOLOL TABLET 50MG</div>
-                <div id="62">LORAZEPAM TABLET</div>
-                <div id="63">ATROPINE INTRAVENOUS I/V & I/M</div>
-                <div id="64">CIPROFLOXACIN TABLET 250MG</div>
-                <div id="65">CIPROFLOXACIN TABLET 500MG</div>
-                <div id="66">CLOMIPHENE TABLET 50MG</div>
-                <div id="67">PYRANTEL EMBONATE SYRUP 15ML</div>
-                <div id="68">PYRANTEL EMBONATE TABLET 125MG</div>
-                <div id="69">ARTEMETER + LUMEFANTRIN 20/120</div>
-                <div id="70">
-                  ARTEMETER + LUMENFANTRIN DISPERSIBLE TABLET 20/120
-                </div>
-                <div id="71">MISOPROSTOL TABLET 200MG</div>
-                <div id="72">MICONAZOLE NITRATE (CREAM)</div>
-                <div id="73">GILBENCLAMIDE TABLET 5MG</div>
-                <div id="74">PYRIMETHAMINE TABLET 25MG</div>
-                <div id="75">DARROWS SOLUTION FULL INTRAVENOU</div>
-              </div>
+              <ul class="dropdown-content" id="medicine-name-list"></ul>
             </div>
           </div>
+
           <div class="form-group">
             <label for="interval">Dose</label>
-            <input
-              type="text"
-              id="Dose"
-              class="input-field"
-              placeholder="mg"
-            />
+            <input type="text" id="Dose" class="input-field" placeholder="mg" />
           </div>
 
           <div class="form-group">
             <label for="interval">Interval</label>
             <input
-              type="number"
+              type="text number"
               id="interval"
               class="input-field"
               placeholder="select frequency"
@@ -451,8 +302,6 @@
             />
           </div>
 
-         
-
           <button type="submit" class="add-btn">Add</button>
         </form>
 
@@ -470,6 +319,7 @@
         <div>About Us | Contact Us | Terms Of Service | Privacy Policy</div>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
